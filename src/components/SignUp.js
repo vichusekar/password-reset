@@ -21,7 +21,7 @@ function SignUp() {
       let res = await axios.post(`${process.env.REACT_APP_API_URL}/sign-up`, data)
       if (res.status === 200) {
         toast.success(res.data.message)
-        navigate('/sign-in')
+        navigate('/')
       }
     } catch (error) {
       console.log(error)
